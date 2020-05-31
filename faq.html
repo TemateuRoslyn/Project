@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       <!-- <link rel="stylesheet" href="disiegn.css">-->
+        <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+
+    <!--Style utilisee pour Smarphone-->
+        <link rel="stylesheet" media="screen and (max-width: 1280px)"  href="CSS/responsive-design.css">
+        <link rel="stylesheet" href="CSS/modal_box.css">
+       <script type="text/javascript" src="Scripts/java_script_source_code.js"></script>
+       
+        <title>UDS->GENIUS CLASSROOM</title>
+    </head>
+    
+    
+    <body>
+          <!-- La boite modale -->
+
+   <div id="mymodal" class="modal">
+     <!-- Contenu de la modal -->
+        <div class="modal-content">
+               <div class="modal-header">
+                   <span class="close" id="croix" onclick="cacher();">&times;</span>
+                   <h1>Genius Classroom: notify you</h1>
+              </div>
+              
+              <div class="modal-body">
+                   <p id="message_modal">D&eacute;sol&eacute; pour participer au chat de geniusclassroom vous devez faire parti de la communot&eacute; genius, connectez-vous et r&eacute;essayez</p>
+             </div>
+
+             <div class="modal-footer">
+                <button onclick="cacher();">OK</button>
+             </div>
+       </div>
+   </div>
+
+        <header> 
+            <div class="ensemble">
+              <b class="genius_title"> Genius Classromm: L' &eacute;ducation pour tous !! </b>
+              
+              <div class="div_description">
+                <button onclick="showdescription();" id="description_btn" ondblclick="hidedescription();">Voire la description</button>
+
+                <b class="description_site" id="description_site">
+                  Genius Classromm est un site web de e-learning mis sur pied par l' &eacute;quipe genius dans le but de mettre &agrave; la disposition des &eacute;tudiants de la facult&eacute; des sciences de l'universit&eacute; de Dschang les cours au format pdf, de fournir &agrave; chaque &eacute;tudiant un espace de travail simplifi&eacute; o&ugrave; il pourra s'&eacute;panouir dans ses &eacute;tudes. 
+                </b>
+                              </div>
+            </div>
+            <!--<div class="Aincrad">
+            <img src="aincrad1.jpg">
+        </div>-->
+            
+        </header>
+        <script type="text/javascript">
+          function showdescription()
+          {
+            document.getElementById('description_site').style.display = 'block';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Double click pour<br> cacher la description';
+            btn.style.marginTop = 'initial';
+          }
+          function hidedescription()
+          {
+            document.getElementById('description_site').style.display = 'none';
+            document.getElementsByClassName('ensemble')[0].style.marginBottom = '10px';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Voire la description';
+            btn.style.marginTop = '10px';
+          }
+        </script>
+        <!--Principaux liens de Navigations-->
+       <!--Principaux liens de Navigations-->
+        <nav>
+            <div class="LignePresentation">
+              <ul>
+                  <!--<li class="menu-accueil"><a href="Accueil.html">Accueil</a></li>-->
+                  <li class="menu-bienvenue"><a>BIENVENUE</a></li>
+                  <li class="menu-Conexion"><a href="Conexion.html">Conexion</a></li>
+                  <li class="menu-Incription"><a href="Incription.html">Incription</a></li>
+                  <li class="menu-password"><a href="password.html">Mot de passe perdu ?</a></li>
+                  <!--<li class="menu-Forum"><a href="Forum.html">Forum</a></li>-->
+                 <!-- <li class="menu-contacter"><a href="Nous-contacter.html">Nous contacter</a></li>-->
+              </ul>
+            </div>
+        
+        </nav>
+        </nav>
+        <div class="content">
+         <!--Le cote gauche-->
+  <div class="menu-gauche">
+          <div class="ex-menu-gauche">
+            <aside class="aside">
+                 <div class="titles">Le site </div>
+                 <div><a href="Projet-web.html">ACCUEIL</a></div>
+                 <div><a href="faq.html">FAQ</a></div>
+                 <!-- <div><a href="contact.html">CONTACT</a></div> -->
+           </aside>
+           <aside class="aside1">
+                <div class="titles">M&eacute;dias</div>
+                <div><a onclick="autorise_download();" style="text-decoration: underline;color:blue">DOWNLOAD</a></div>
+                <div><a href="licence.html">LICENCIE</a></div>
+                <div><a href="logiciel.html">LOGICIELS</a></div>
+           </aside>
+           <aside class="aside2">
+                <div class="titles">&Eacute;changes</div>
+                <div><a onclick="autorise_chat();" style="text-decoration: underline;color:blue">CHAT</a></div>
+                <div><a href="partenariat.html">PARTENARIAT</a></div>
+           </aside>
+
+      </div>
+      
+  <div class="publicite">
+         <p> Nous r&eacute;joindre sur les r&eacute;so-sosiaux</p>
+          <ul>
+            <li><a href=""><img src="Ressources/instagramm.png" class="icone-insta"></a></li>
+            <li><a href="geniusclassroom-viber"><img src="Ressources/viber.png" class="icone-viber"></a></li>
+            <li><a href="geniusclassroom-fb@gmail.com"><img src="Ressources/face-book.png" class="icone-fb"></a></li>
+            <li><a href="geniusclassroom-viver-youtube@gmail.com"><img src="Ressources/youtube-logo-hd-8.png" class="icone-youtube"></a></li>
+<!--             <li><a href=""><img src="Ressources/whatsapp.png" class="icone-whatsapp"></a></li>
+ -->
+            
+          </ul>
+      </div>
+   </div> 
+
+         <section class="centre-accueil">
+             <p class="geniusP">geniusclassroom <br></b>
+                 FAQ </i></p>
+             <p style="padding-left: 0px;padding-right: 550px;font-family: sans-serif">Questions: (Derniers ajouts)</p>
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <ol>
+                     <li>Qu'est-ce qu'un gc-point ?</li>
+                     <li>Rejoindre la team geniusClassroom</li>
+                     <li>Quels sont les rangs ?</li>
+                     <li>Mon post a été supprimé/locké pourquoi ?</li>
+                     <li>Les gens sont méchants avec moi</li>
+                     <li>Les modérateurs sont incompétents.</li>
+                     <li>Je souhaite devenir uploader</li>
+                 </ol>
+             </div><br>
+          <p style="padding-left: 0px;padding-right: 670px;font-family: sans-serif">Réponses: </p>
+              
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Qu'est-ce qu'un gc-point ?</b><br>
+                  Vous-vous dite sans doute à ce instant que ce mot existe pas et se qu'il peut bien vouloire dire !
+                  alors cessez de refléchir, ici ce qu'on appelle des gc-points sont en réalités des points que vous obtiendrez selon vos taux
+                  d'activités/participations dans le forum et grace à ces points vous pouvez gravir les échelons. 
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+             
+              <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Rejoindre la team geniusClassroom</b><br>
+                 Pour nous ejoindre c'est facile, il suffit de poster sa candidature sur le forum dans la ctégorie désirée:<br>
+                 <a href="recrtement.html"> Recrutement-Forum</a>
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+             
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Quels sont les rangs ?</b><br>
+                 Tous les 50 messages vous grimmpez en echelon.
+                 <ol>
+                   <li>Simple aspirant 50</li>
+                   <li>guerrier assidut 100</li>
+                   <li>participant confirmé 150</li>
+                   <li>aventurier 200</li>
+                   <li>membre à part enti&egrave;re 250</li>
+                   <li>participant confirmé 300</li>
+                   <li>Ermite 400</li>
+                   <li>ma&icirc;tre de guilde 500</li>
+                   <li>Pilier 700</li>
+                 
+                 </ol>
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+             
+               <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Mon post a été supprimé/locké pourquoi ?</b><br>
+                 Avant de poster quoi que se soit, assurez-vous qu'un autre post ne traite pas d&eacute;j&agrave; de votre sujet.
+                    Cela ne sert à rien d'avoir plusieurs topics sur le m&ecirc;me sujet.
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+             
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Les gens sont méchants avec moi</b><br>
+                 Respectez les r&egrave;gle du forum et vous n'aurez pas de probl&egrave;mes.
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br> 
+             
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Les modérateurs sont incompétents.</b><br>
+                Ah bah &ccedil;a oui, il suffit que vous fassief une demande pour que je le devinne
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+             
+             <div  style="margin: auto;width: 60%;float: bottom;text-align: left;padding-left: 0px;border-style:double;background-color: aliceblue;padding-right: 300px;border-color: blue">
+                 <img src="Ressources/question.gif"> <b style="font-size: 20px">Je souhaite devenir uploader</b><br>
+                Les uploaders sont recrut&eacute;s par les admins quand c'est n&eacute;c&eacute;ssaire. Tout le monde sera averti par une news.
+                  <div  style="margin: auto;width: 99%;float: bottom;text-align: left;padding-left: 0px;border-style:solid;background-color: aliceblue;padding-right: 300px;border-color: cadetblue"><a href="#begin">Retourner au haut de page</a></div>
+             </div><br>
+                 
+           
+        
+        </section>
+        </div>
+        <footer> <p>COPYRIGHT 2020 <b>geniusclassroom</b> ALL RIGHT RESERVED</p></footer>
+        
+        
+        
+    
+    </body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,1 @@
+<footer> <p>COPYRIGHT 2020 <b>geniusclassroom</b> ALL RIGHT RESERVED</p></footer>

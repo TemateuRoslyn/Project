@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+       <!-- <link rel="stylesheet" href="disiegn.css">-->
+        <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+
+    <!--Style utilisee pour Smarphone-->
+        <link rel="stylesheet" media="screen and (max-width: 1280px)"  href="CSS/responsive-design.css">
+        <link rel="stylesheet" href="CSS/modal_box.css">
+       <script type="text/javascript" src="Scripts/java_script_source_code.js"></script>
+       
+        <title>UDS->GENIUS CLASSROOM</title>
+    </head>
+    
+    <body>
+               <!-- La boite modale -->
+
+   <div id="mymodal" class="modal">
+     <!-- Contenu de la modal -->
+        <div class="modal-content">
+               <div class="modal-header">
+                   <span class="close" id="croix" onclick="cacher();">&times;</span>
+                   <h1>Genius Classroom: notify you</h1>
+              </div>
+              
+              <div class="modal-body">
+                   <p id="message_modal">D&eacute;sol&eacute; pour participer au chat de geniusclassroom vous devez faire parti de la communot&eacute; genius, connectez-vous et r&eacute;essayez</p>
+             </div>
+
+             <div class="modal-footer">
+                <button onclick="cacher();">OK</button>
+             </div>
+       </div>
+   </div>
+
+        <header> 
+            <div class="ensemble">
+              <b class="genius_title"> Genius Classromm: L' &eacute;ducation pour tous !! </b>
+              
+              <div class="div_description">
+                <button onclick="showdescription();" id="description_btn" ondblclick="hidedescription();">Voire la description</button>
+
+                <b class="description_site" id="description_site">
+                  Genius Classromm est un site web de e-learning mis sur pied par l' &eacute;quipe genius dans le but de mettre &agrave; la disposition des &eacute;tudiants de la facult&eacute; des sciences de l'universit&eacute; de Dschang les cours au format pdf, de fournir &agrave; chaque &eacute;tudiant un espace de travail simplifi&eacute; o&ugrave; il pourra s'&eacute;panouir dans ses &eacute;tudes. 
+                </b>
+                              </div>
+            </div>
+            <!--<div class="Aincrad">
+            <img src="aincrad1.jpg">
+        </div>-->
+            
+        </header>
+        <script type="text/javascript">
+          function showdescription()
+          {
+            document.getElementById('description_site').style.display = 'block';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Double click pour<br> cacher la description';
+            btn.style.marginTop = 'initial';
+          }
+          function hidedescription()
+          {
+            document.getElementById('description_site').style.display = 'none';
+            document.getElementsByClassName('ensemble')[0].style.marginBottom = '10px';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Voire la description';
+            btn.style.marginTop = '10px';
+          }
+        </script>
+            <!--<div class="Aincrad">
+            <img src="aincrad1.jpg">
+        </div>-->
+            
+        <!--Principaux liens de Navigations-->
+        <nav>
+            <div class="LignePresentation">
+              <ul>
+                  <!--<li class="menu-accueil"><a href="Accueil.html">Accueil</a></li>-->
+                  <li class="menu-bienvenue"><a>BIENVENUE</a></li>
+                  <li class="menu-Conexion"><a href="Conexion.html">Conexion</a></li>
+                  <li class="menu-Incription"><a href="Incription.html">Incription</a></li>
+                  <li class="menu-password"><a href="password.html">Mot de passe perdu ?</a></li>
+                  <!--<li class="menu-Forum"><a href="Forum.html">Forum</a></li>-->
+                 <!-- <li class="menu-contacter"><a href="Nous-contacter.html">Nous contacter</a></li>-->
+              </ul>
+            </div>
+        
+        </nav>
+                <!--Le cote gauche-->
+  <div class="menu-gauche">
+          <div class="ex-menu-gauche">
+            <aside class="aside">
+                 <div class="titles">Le site </div>
+                 <div><a href="Projet-web.html">ACCUEIL</a></div>
+                 <div><a href="faq.html">FAQ</a></div>
+                 <!-- <div><a href="contact.html">CONTACT</a></div> -->
+           </aside>
+           <aside class="aside1">
+                <div class="titles">M&eacute;dias</div>
+                <div><a onclick="autorise_download();" style="text-decoration: underline;color:blue">DOWNLOAD</a></div>
+                <div><a href="licence.html">LICENCIE</a></div>
+                <div><a href="logiciel.html">LOGICIELS</a></div>
+           </aside>
+           <aside class="aside2">
+                <div class="titles">&Eacute;changes</div>
+                <div><a onclick="autorise_chat();" style="text-decoration: underline;color:blue">CHAT</a></div>
+                <div><a href="partenariat.html">PARTENARIAT</a></div>
+           </aside>
+
+      </div>
+      
+  <div class="publicite">
+         <p> Nous r&eacute;joindre sur les r&eacute;so-sosiaux</p>
+          <ul>
+            <li><a href=""><img src="Ressources/instagramm.png" class="icone-insta"></a></li>
+            <li><a href="geniusclassroom-viber"><img src="Ressources/viber.png" class="icone-viber"></a></li>
+            <li><a href="geniusclassroom-fb@gmail.com"><img src="Ressources/face-book.png" class="icone-fb"></a></li>
+            <li><a href="geniusclassroom-viver-youtube@gmail.com"><img src="Ressources/youtube-logo-hd-8.png" class="icone-youtube"></a></li>
+<!--             <li><a href=""><img src="Ressources/whatsapp.png" class="icone-whatsapp"></a></li>
+ -->
+            
+          </ul>
+      </div>
+   </div> 
+
+         <section id="idsection" class="centre-accueil" style="height: 850px;border: 1;background-color: white;" cellepadding="0" cellspacing="0">
+             <p style="font-size: 65px;font-family: sans-serif;color: cornflowerblue"><i><b style="font-size: 70px;">geniusclassroom <br></b>
+                 contact <img src="Ressources/fleche-rouge-oblique.png" style="height: 40px"></i></p>
+                 
+             <form method="post", action="traitement.php" style="background-color: white;width: 100%">
+              <h2><p><i>Veuilliez remplir le formulaire ci-dessous puis cliquez sur envoyer</i> </p></h2><br>
+                 <!--*************************L'objet de la demande******************************-->
+                 <fieldset style="background-color: antiquewhite">
+                     <legend>Objet de la demande</legend>
+                 <label>Objet</label> : <input type="text" name="nom" size="75" placeholder="objet de votre demande">
+                 </fieldset><br>
+                 <!--*************************Les informations de l'utilisateur******************************-->
+                 <fieldset style="background-color: antiquewhite">
+                     <legend>Vos informations</legend>
+              <label>Votre Pdseudonyme</label> : <input type="text" name="pdseudo" size="59" placeholder="tapez votre pseudonyme ici" required><br>
+              <label>Votre Email</label> : <input type="email" name="nom" size="50" placeholder="tapez votre login ici" required><br>
+              <label for="pass">Votre mot de passe : </label><input type="password" name="pass" placeholder="tapez votre mot de passe" size="57" required>
+                </fieldset><br>
+                 <!--*************************Le message envoyé******************************-->
+                 <fieldset style="background-color: antiquewhite">
+                     <legend>Le message qui sera envoyer</legend>
+                 <label style="text-align: bottom">Votre message : </label> <textarea name="message" rows="10" cols="50" placeholder="tapez tous votre message dans ce champ"></textarea>
+                 </fieldset>
+                 
+                 <!--*************************Cliquer sur envoyer******************************-->
+                 <fieldset style="background-color: antiquewhite">
+                     <legend>Finalisez votre demande</legend>
+                    <input type="submit" value="Envoyer">
+                 </fieldset>
+              
+            </form>
+           
+        
+        </section>
+        <footer> <p>COPYRIGHT 2020 <b>geniusclassroom</b> ALL RIGHT RESERVED</p></footer>
+        
+        
+        
+    
+    </body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <clipPath id="clip-f_logo_RGB-White_68x68">
+      <rect width="68" height="68"/>
+    </clipPath>
+  </defs>
+  <g id="f_logo_RGB-White_68x68" clip-path="url(#clip-f_logo_RGB-White_68x68)">
+    <path id="路径_1" data-name="路径 1" d="M68,34.208A34,34,0,1,0,28.687,68V44.1H20.055V34.208h8.633V26.671c0-8.573,5.076-13.309,12.842-13.309a51.977,51.977,0,0,1,7.611.668v8.418H44.853c-4.224,0-5.541,2.637-5.541,5.342v6.417h9.43L47.235,44.1H39.312V68A34.153,34.153,0,0,0,68,34.208Z" transform="translate(0 0)" fill="#fff"/>
+    <rect id="矩形_3" data-name="矩形 3" width="68" height="68" fill="none"/>
+  </g>
+</svg>

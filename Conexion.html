@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/modal_box.css">
+    <script type="text/javascript" src="Scripts/bibliotheque-jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/verify_connexion.js"></script>
+
+  </head>
+  <body>
+   <!-- La boite modale -->
+
+   <div id="mymodal" class="modal">
+     <!-- Contenu de la modal -->
+        <div class="modal-content">
+               <div class="modal-header">
+                   <span class="close" id="croix" onclick="cacher();">&times;</span>
+                   <h1>Genius Classroom: notify you</h1>
+              </div>
+              
+              <div class="modal-body">
+                   <p>D&eacute;sol&eacute; impossible de vous connet&eacute; car le login ou le mot de passe renseign&eacute; est incorrecte. veuillez verifier  et r&eacute;essayer.</p>
+             </div>
+
+             <div class="modal-footer">
+                <button onclick="cacher();">OK</button>
+             </div>
+       </div>
+   </div>
+
+   
+    <div class="bg-img">
+      <div class="content">
+        <header>Login Form</header>
+
+        <form action="fonctions/conexion.php" method="post" id="idFormulaire">
+
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required name="pseudonyme" value="acronyme" id="idpseudo">
+            <input type="hidden"  name="cible" value="conexion.php" id="cible">
+          </div>
+<div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="pass-key" required placeholder="Password" id="idpass" value="acronyme" name="pass">
+            <span class="show">SHOW</span>
+          </div>
+<div class="pass">
+            <a href="#">Forgot Password?</a>
+          </div>
+<div class="field">
+            <input type="submit" value="LOGIN">
+          </div>
+</form>
+
+<div class="signup">
+Don't have account?
+          <a href="#">Signup Now</a>
+        </div>
+</div>
+</div>
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+  
+  </body>
+</html>
+

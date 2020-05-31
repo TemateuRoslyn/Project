@@ -1,0 +1,338 @@
+/***************************************
+On indique le type de police a utiliser
+****************************************/
+@font-face
+{
+	font-family: 'Maestros-font';
+	src: url('fonts/TEMPSITC.TTF');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Maestros-font-chat';
+	src: url('fonts/Exo2-Light.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: Maestros-font;
+	background-color: lightgoldenrodyellow;
+}
+
+.contenu-chat{
+	font-family: 'Maestros-font-chat'; 
+}
+.contenu{
+	margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+}
+.monMessages{
+	display: flex;
+}
+#link_message:hover{
+cursor: pointer;
+}
+
+
+#monTriangle{
+			margin-top: 0.7%;
+			width: 0;
+			height: 0;
+			border-left: 20px solid lightgreen;
+			border-bottom:  10px solid transparent;
+		}
+#monTriangles
+{
+			margin-top: 0.7%;
+			width: 0;
+			height: 0;
+			border-right: 20px solid white;
+			border-bottom:  10px solid transparent;
+}
+.monMessagess{
+	display: flex;
+	justify-content: flex-end;
+}
+.sonMessages{
+	display: flex;
+	justify-content: flex-start;
+}
+.inverse{
+	display: flex;
+	justify-content: flex-end;
+}
+.monmessage-content{
+	width: 30%;
+	width: auto;
+	max-width: 80%;
+	margin-top: 0.7%;
+	background-color: lightgreen;
+	border-bottom-left-radius: 10px; 
+	border-top-left-radius: 10px; 
+	border-bottom-right-radius: 10px; 
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.sonmessage-content{
+	width: 30%;
+	width: auto;
+	max-width: 80%;
+	margin-top: 0.7%;
+	background-color: white;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+.nom_membres{
+	font-size: 20px;
+	width: 60%;
+	height: 35%;
+	height: auto;
+	max-height: 38%;
+	width: auto;
+	max-width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+/*.link_message va contenir le lien vers un autre  et
+ sera principalement place au dessu de mmessageLink*/
+.link_message{
+	padding-left: 5px;
+	margin-top: 0.9%;
+	height: 50px;
+	width: 100%;
+	width: auto;
+	max-width: inherit;
+	border-left: 3px solid red;
+	background-color: #aaf;
+	opacity: 0.9;
+	margin-bottom: 0.7%;
+	text-align: left;
+	border-radius: 5px; 
+	font-size: 20px;
+	overflow-y: hidden;
+}
+/*.monMessageLien est le message de l'utilisateur courant qui 
+contient un message qui attend un lien vers un autre message au dessus*/
+.monMessageLien
+{ 
+	width: 100%;
+	text-align: left;
+	border-bottom-right-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+	font-size: 25px;
+}
+/*.monMessage contient mons message sans lien vers un autre message*/
+.monMessage{
+	width: 30%;
+	width: auto;
+	background-color: lightgreen;
+	margin-top: 0.7%;
+	margin-bottom: 0.7%;
+	text-align: left;
+	border-bottom-right-radius: 10px; 
+	border-top-left-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+	font-size: 25px;
+}
+.sonMessage
+{
+	width: 30%;
+	width: auto;
+	background-color: white;
+	margin-top: 0.7%;
+	margin-bottom: 0.7%;
+	border-top-right-radius: 15px; 
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px; 
+	font-size: 25px;
+}
+.message{
+	padding: 10px 10px 5px 10px;
+	max-width: 80%;
+}
+.message:hover{
+	cursor: pointer;
+}
+.pseudo{
+	color: red;
+}
+.pseudo:hover{
+	cursor: pointer;
+}
+.text_message{
+	text-align: left;
+	font: bold;
+	font-size: 15px;
+}
+.ladates{
+	margin-left: 1px;
+}
+.ladate{
+	margin-left: 10px;
+	width: 97%;
+}
+.dates{
+	color: black;
+	font-size: 14.5px;
+	float: right;
+	font-family: arial;
+}
+.date{
+	color: black;
+	font-size: 14.5px;
+	float: right;
+	font-family: arial;
+}
+
+
+
+.lechat{
+	margin-left: 40%;
+	margin-right: 40%;
+	box-shadow: 0.01px 0.01px 10px 14px rgb(0,111,152);
+	border-radius: 10px;
+	text-align: center;
+	background-color: #AAA;
+}
+.lechat:hover{
+	cursor: pointer;
+	background-color: rgb(1,500,700); 
+}
+.contenu-chat{
+	position: relative;
+}
+.chat{
+	width: 79.9%;
+	background-color: gray;
+	background: url('../Ressources/aincrad.jpeg');
+	overflow-y: auto;
+	height: 70%;
+	padding-left: 5px;
+	padding-top: 10px;
+	border-right: gray solid 0.01px;
+}
+.iconedefilement{
+	position: absolute;
+	font-size: 30px;
+	background-color: white;
+	/*margin-left: 37.2%;
+	margin-top: 36%;*/
+	padding: 2px;
+	border-radius: 100px;
+	background-color: rgba(900,0,900,0.7);
+}
+.entete-chat
+{
+	padding-top: 2px;
+	text-align: center;
+	color: white;
+	height: 10%;
+	width: 80%; 
+	margin-bottom: 0px;
+	background-color: rgb(1,110,100);
+	border-top-right-radius: 10px; 
+	border-top-left-radius: 10px;
+	border-top:  rgb(1,110,100) solid 10px;
+	border-right: rgb(1,110,100) solid 7px; 
+	display: flex;
+}
+.entete-chat .logo-genius{
+margin-top: 4px;
+margin-left: 0.8%;
+margin-bottom: 2px;
+ width: 10%;
+ background-color: rgb(0,111,152);
+ border-radius: 60px;
+ text-align: center;
+ padding: 10px 3px 5px 3px;
+ color: black;
+ font-weight: bold;
+ font-size: 30px;
+}
+.entete-chat .chat-crew{
+font-size: 30px;
+  width: 80%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-link{
+	height: 10px;
+	height: auto;
+	width: 454px;
+	padding: 2px 5px 1px 5px;
+	overflow-y: hidden;
+	background-color: rgba(90,0,900,0.3); 
+	border-left: 5px solid rgb(1,110,100);
+	border-top-right-radius: 5px; 
+	border-top-left-radius: 3px;
+	max-width: 465px;
+	max-height: 50px;
+}
+.message-link span{
+	font-size: 20px;
+	float: right;
+	margin-right: 3%;
+}
+.message-link span:hover{
+	cursor: pointer;
+}
+.message_send_invese{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+}
+.message_send{
+	padding-top: 10px;
+	height: 20%;
+	width: 80%; 
+	background-color: gray;
+	border-bottom-right-radius: 10px; 
+	border-bottom-left-radius: 10px;
+	border-bottom:  rgb(0,111,152) solid 10px;
+	border-right: gray solid 7px;  
+}
+.formulaire_chat #message{
+	font-size: 25px;
+	border-radius: 10px;
+	border-bottom-left-radius:  10px;
+	padding: 10px;
+	letter-spacing: 2px;
+	border: 1px;
+	width: inherit;
+	height: 25px;
+	height: auto;
+	max-height: 80px;
+	transition: width 1s;
+	margin-bottom: 3px;
+}
+
+
+.formulaire_chat{
+	text-align: center;
+	margin-bottom: 3px;
+	display: flex;
+}
+.formulaire_chat .send{
+	width: 58px;
+	height: 55px;
+	border-radius:85px;
+	border: 1px;
+	background-color: white;
+	background-position: center;
+	
+}
+.formulaire_chat .send:hover{
+	cursor: pointer;
+}
+.contenu{
+	height: 800px;
+}
