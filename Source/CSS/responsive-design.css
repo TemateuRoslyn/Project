@@ -1,0 +1,679 @@
+/***************************************
+On indique le type de police a utiliser
+****************************************/
+@font-face
+{
+	font-family: 'Maestros-font';
+	src: url('fonts/TEMPSITC.TTF');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: Maestros-font;
+	background-color: lightgoldenrodyellow;
+}
+
+/*Pour les smarphone*/
+
+@media all and (max-width: 500px)
+{
+	.text-declaration
+	{
+		font-size: 17px;
+	}
+	nav a
+	{
+		font-size: 15px;
+	}
+	.liendenavigation
+	{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.div_profil
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 5%;
+	}
+	.div_profil button
+	{
+		font-weight: 600;
+		margin-top: 6%;
+		margin-left:  13%;
+		margin-bottom:  30px;
+	}
+	  .profil_utilisateur
+	  {
+	  	width: 133px;	
+	  	margin-left: 30%; 
+	  	 }  
+	.add_new_course{
+	border-left: 10px solid red;
+	margin-left: 10%;
+}
+	.nouscontacter
+	{
+		width: 95%;
+	}
+	.modal-header h1
+	{
+	    	font-size: 20px;
+	}
+	.modal{
+		height: 200%;
+	}
+	.nouscontacter *
+	{
+		font-size: 15px;
+		padding: 1px 5px 1px 5px;
+		 width: 95%;
+		 margin: auto;
+	}  
+	.ensemble{
+		height: 45px;
+	}
+	#image-science{
+		display: none;
+	}
+	.ensemble .div_description{
+		display: none;
+	}
+ 	.ensemble .genius_title
+    {
+	margin-bottom: 10px;
+	margin-left: 3%;
+	font-size: 12.5px;
+	font-weight: 900;
+	color: #A12;
+	text-shadow: 1px 3px 5px black;
+	border-left: 6px solid rgb(1,150,152);
+	padding-left: 1%;
+    }
+ 	.content
+ 	{
+		display: block;
+	}
+  	.menu-gauche
+  	{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		box-shadow: 1px 1px 10px 6px rgb(0,111,152);
+		height: 800px;
+	}
+		.publicite{
+	margin-top: 10%;
+	font-size: 25px;
+	display: inline-block;
+	background-color: lightgreen;
+	margin-bottom: 5%;
+	
+  
+}
+
+
+.publicite  .icone-insta{
+	margin-left: 0.5%;
+
+}
+
+
+.publicite p{
+	border-left: 10px solid red;
+	margin-left: 5%;
+	font-weight: 900;
+	color: deepskyblue;
+	font-size: 30px;
+}
+.publicite li:hover{
+	cursor: pointer;
+
+}
+.publicite li{
+	 list-style-type: none; 
+    float: left; 
+    width: 20%;
+}
+.publicite .icone-youtube{
+	width: 110%;
+	margin-left: 70%;
+	margin-top: 30%;
+}
+ .publicite .icone-insta{
+ 	width: 100%;
+ }
+.publicite .icone-fb{
+	margin-left: 15%;
+}
+
+	.centre-accueil
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+	.centre-accueil .geniusB
+	{
+		font-size: 20px;
+	}
+	.text .p
+	{
+		font-size: 30px;
+	}
+	.text .p1
+	{
+		font-size: 18px;
+	}
+	.img-block
+	{
+		width: 80%;
+	}
+	.text
+	{
+		width: 100%;
+	}
+	.centre-accueil .img-accueil
+	{
+		width: 35px;
+	}
+	.description{
+		font-size: 18px;
+	}
+	.centre-accueil .geniusP
+	{
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	/*********************************
+	**********le user connecte********
+	**********************************/
+	.user_conected_style
+	{
+		font-weight: 20;
+		font-size: 10px;
+    }
+	/**********************************
+	*Responsive pour la messagerie: CHAT
+	************************************/
+	.message-link
+	{
+		height: 20px;
+		height: auto;
+		width: 143px;
+		max-width: 250px;
+		margin-left: 17.5%;
+		max-height: 80px;
+		padding-bottom: 2px;
+	}
+	.contenu
+	{
+		height: 700px;
+		width: 100%;
+		font-size: 10px;
+		/*margin-left: 1%;*/
+	}
+	form #message
+	{
+
+		width: inherit;
+		font-size: 15px;	
+
+	}
+
+	form .send
+	{
+		width: 44px;
+		height: 40px;
+		border-radius: 100px;
+	}
+	.lechat{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: 40px;
+	}
+	#monTriangles
+	{
+		margin-top: 1.7%;	
+	}
+	#monTriangle
+	{
+		margin-top: 1.7%;	
+	}
+	.message_send_invese{
+		width: 90%;
+		margin-left: 1%;
+	}
+	.monMessage
+	{
+		margin-top: 1.7%;
+		margin-bottom: 1.7%;
+		margin-left: 20%;
+		font-size: 18px;
+	}
+	.sonMessage
+	{
+		margin-top: 1.7%;
+		margin-bottom: 1.7%;
+		font-size: 18px;
+	}
+	.date{
+		font-size: 11px;
+	}
+	.dates
+	{
+		font-size: 11px;
+	}
+	.menu-droit
+	{
+		width: 90%;
+		display: inline-block;
+		margin-top: 1%;
+		margin-left: 4%;
+	}
+	.entete-chat .chat-crew
+	{
+		font-size: 20px;
+	    width: 70%;
+	}
+	.entete-chat .logo-genius
+	{
+		width: 25%;
+		font-size: 30px;
+	}
+	.contentS{
+		flex-direction: column-reverse;
+	}
+	/***************************
+	***Faculte des sciences***
+	***************************/
+	.filieres .bulle-filier
+	{
+		height: 35px;
+		font-size: 30px;
+		width: 13%;
+	}
+	.filieres .ma
+	{
+		width: 14%;
+	}
+	.filieres .phy
+	{
+	  width: 16%;
+	}
+	.filieres
+	{
+		width: 99%;
+	}
+	.next-level div
+	{
+		font-size: 20px;
+		width: 90px;
+	}
+	.matiere-title
+	{
+		margin-left: 0%;
+		width: 95%;
+		font-size: 30px;
+	}
+	/*Pour le tableau de telechargement de matieres*/
+	.cours-display
+	{
+		font-size: 13px;
+		margin: 0 auto;
+	}
+   /*********************************
+	**********le user connecte********
+	**********************************/
+	.user_conected_style
+	{
+		font-weight: 900;
+		font-size: 18px;
+    }
+
+   /*LE FOOTER*/
+	footer
+	{
+		margin-top: 30px;
+   		 height: 70px;
+    	 text-align: center;
+   		 background-color: rgb(0,111,152);
+  	     border-top: 2px solid #AAA;
+    	 font-size: 15px;
+   		 font-weight: 900;
+   		 text-shadow: 1px 2px 10px red;
+}
+.monMessages .le-messages
+{
+	font-size: 20px;
+}
+.monMessage
+{
+	font-size: 20px;
+}
+.sonMessage
+{
+	font-size: 20px;
+}
+}
+
+
+
+/*=======================================================================================
+========================================================================================
+***Pour les tablette et appareil dont la taille est inferieur a celle d'un ordinateur***
+========================================================================================
+========================================================================================*/
+@media (min-width: 500px) and (max-width: 1200px)
+{
+	nav a
+	{
+		font-size: 20px;
+	}
+	.modal-header h1
+	{
+	    	font-size: 25px;
+	}
+	.modal{
+		height: all;
+	}
+	.ensemble .genius_title
+    {
+	margin-bottom: 20px;
+	margin-left: 3%;
+	font-size: 28px;
+	font-weight: 900;
+	color: #A12;
+	text-shadow: 1px 3px 5px black;
+	border-left: 6px solid rgb(1,150,152);
+	padding-left: 1%;
+    }
+   .content
+ 	{
+		display: block;
+	}
+
+	.centre-accueil
+	{
+		width: 100%;
+		font-size: 14px;
+	}
+	.menu-gauche
+  	{
+		height: 500px;
+		display: flex;
+		padding-top: 50px;
+
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		box-shadow: 1px 1px 10px 6px rgb(0,111,152);
+	
+	}
+	.publicite{
+	margin-top: 10%;
+	font-size: 25px;
+	display: inline-block;
+	background-color: lightgreen;
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	
+  
+}
+
+
+.publicite  .icone-insta{
+	margin-left: 3%;
+
+}
+.publicite .icone-whatsapp{
+	width: 30%
+	background-color: black;
+
+}
+
+.publicite p{
+	border-left: 10px solid red;
+	margin-left: 20%;
+	font-weight: 900;
+	color: deepskyblue;
+	font-size: 30px;
+}
+.publicite li:hover{
+	cursor: pointer;
+
+}
+.publicite li{
+	 list-style-type: none; 
+    float: left; 
+    width: 20%;
+}
+.publicite .icone-youtube{
+	width: 50%;
+	margin: auto;
+}
+
+
+
+	.ex-menu-gauche{
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
+	}
+	.ex-menu-gauche aside
+  	{
+		height: 200px;
+		border-radius: 10px;
+		width: 30%;
+		margin: auto;
+	}
+    .ex-menu-gauche .aside
+  	{
+		background-color: rgb(1,150,152);
+		/*margin-left: 35%;*/
+		/*width: 60%;*/
+	}
+	.ex-menu-gauche .aside1
+  	{
+		background-color: rgb(1,150,152);	
+		/*margin-left: 25%;*/
+
+		
+	}
+	.ex-menu-gauche .aside2
+  	{
+		background-color: rgb(1,150,152);	
+		/*margin-left: 25%;*/
+
+			
+	}
+
+	.centre-accueil .geniusB
+	{
+		font-size: 30px;
+	}
+	.description{
+		font-size: 22px;
+	}
+	.centre-accueil .geniusP
+	{
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.text .p
+	{
+		font-size: 40px;
+	}
+	.text .p1
+	{
+		font-size: 22px;
+	}
+	.centre-accueil .img-accueil
+	{
+		width: 50px;
+	}
+	.content-block
+	{
+		overflow-y: auto;
+	}
+	
+	/*******************
+	Gestion de la messagerie: CHAT*
+	**************************/
+	.message-link
+	{
+		height: 10px;
+		height: auto;
+		width: 200px;
+		width: auto;
+		max-width: 300px;
+		margin-left: 28%;
+		max-height: 60px;
+	}
+	form .message_send_invese{
+		width: 50%;
+	}
+	.entete-chat .logo-genius
+	{
+		width: 8%;
+		font-size: 30px;
+	}
+	form .send
+	{
+		width: 55px;
+		height: 50px;
+		border-radius: 100px;
+	}
+	form #message
+	{
+		width: 300px;
+		font-size: 22px;
+	}
+	/*form #message:focus
+	{
+	width: 70%;
+	font-size: 23px;
+	}*/
+	.entete-chat .logo-genius
+	{
+		width: 18%;
+		font-size: 32px;
+	}
+	.lechat
+	{
+		font-size: 30px;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		height: 70px;
+	}
+	#monTriangles
+	{
+		margin-top: 1.2%;	
+	}
+	#monTriangle
+	{
+		margin-top: 1.2%;	
+	}
+	.monMessage
+	{
+		margin-top: 1.2%;
+		margin-bottom: 1.2%;
+		font-size: 20px;
+		margin-left: 26%;
+	}
+	.sonMessage
+	{
+		margin-top: 1.2%;
+		margin-bottom: 1.2%;
+		font-size: 20px;
+	}	
+	.date{
+		font-size: 12px;
+	}
+	.dates
+	{
+		font-size: 12px;
+	}
+	.menu-droit
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		margin-top: 2%;
+	}
+	/*.menu-droit *
+	{
+		width: 400px;
+	}*/
+	.contentS{
+		flex-direction: column-reverse;
+	}
+	/*Faculte des sciences*/
+	.filieres .bulle-filier
+	{
+		height: 45px;
+		font-size: 40px;
+	}
+	.filieres .ma
+	{
+		width: 10%;
+	}
+	.filieres .phy
+	{
+	  width: 12%;
+	}
+	.filieres
+	{
+		width: 80%;
+	}
+	.next-level div
+	{
+		font-size: 20px;
+		width: 150px;
+		height: 30px;
+	}
+	.matiere-title
+	{
+		margin-left: 10%;
+		width: 70%;
+		font-size: 35px;
+	}
+	/*Pour le tableau de telechargement de matieres*/
+	.cours-display
+	{
+		font-size: 20px;
+		margin: 0 auto;
+	}
+	/*********************************
+	**********le user connecte********
+	**********************************/
+	.user_conected_style
+	{
+		font-weight: 900;
+		font-size: 20px;
+    }
+
+   /*LE FOOTER*/
+	footer
+	{
+		margin-top: 3px;
+		height: 70px;
+		height: auto;
+   		 max-height: 100px;
+    	 text-align: center;
+   		 background-color: rgb(0,111,152);
+  	     border-top: 2px solid #AAA;
+    	 font-size: 24px;
+   		 font-weight: 900;
+   		 text-shadow: 1px 2px 10px red;
+	}
+}

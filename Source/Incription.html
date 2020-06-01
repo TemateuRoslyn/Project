@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+       <!-- <link rel="stylesheet" href="disiegn.css">-->
+        <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+
+    <!--Style utilisee pour Smarphone-->
+        <link rel="stylesheet" media="screen and (max-width: 1280px)"  href="CSS/responsive-design.css">
+        <link rel="stylesheet" href="CSS/modal_box.css">
+       <script type="text/javascript" src="Scripts/java_script_source_code.js"></script>
+       
+        <title>UDS->GENIUS CLASSROOM</title>
+    </head>
+    
+    
+    <body>
+            <!-- La boite modale -->
+
+   <div id="mymodal" class="modal">
+     <!-- Contenu de la modal -->
+        <div class="modal-content">
+               <div class="modal-header">
+                   <span class="close" id="croix" onclick="cacher();">&times;</span>
+                   <h1>Genius Classroom: notify you</h1>
+              </div>
+              
+              <div class="modal-body">
+                   <p id="message_modal">D&eacute;sol&eacute; pour participer au chat de geniusclassroom vous devez faire parti de la communot&eacute; genius, connectez-vous et r&eacute;essayez</p>
+             </div>
+
+             <div class="modal-footer">
+                <button onclick="cacher();">OK</button>
+             </div>
+       </div>
+   </div>
+
+        <header> 
+            <div class="ensemble">
+              <b class="genius_title"> Genius Classroom: L' &eacute;ducation pour tous !! </b>
+              
+              <div class="div_description">
+                <button onclick="showdescription();" id="description_btn" ondblclick="hidedescription();">Voire la description</button>
+
+                <b class="description_site" id="description_site">
+                  Genius Classromm est un site web de e-learning mis sur pied par l' &eacute;quipe genius dans le but de mettre &agrave; la disposition des &eacute;tudiants de la facult&eacute; des sciences de l'universit&eacute; de Dschang les cours au format pdf, de fournir &agrave; chaque &eacute;tudiant un espace de travail simplifi&eacute; o&ugrave; il pourra s'&eacute;panouir dans ses &eacute;tudes. 
+                </b>
+                              </div>
+            </div>
+            <!--<div class="Aincrad">
+            <img src="aincrad1.jpg">
+        </div>-->
+            
+        </header>
+         <script type="text/javascript">
+          function showdescription()
+          {
+            document.getElementById('description_site').style.display = 'block';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Double click pour<br> cacher la description';
+            btn.style.marginTop = 'initial';
+          }
+          function hidedescription()
+          {
+            document.getElementById('description_site').style.display = 'none';
+            document.getElementsByClassName('ensemble')[0].style.marginBottom = '10px';
+            var btn = document.getElementById('description_btn');
+            btn.innerHTML = 'Voire la description';
+            btn.style.marginTop = '10px';
+          }
+        </script>
+            <!--<div class="Aincrad">
+            <img src="aincrad1.jpg">
+        </div>-->
+            
+        </header>
+        <!--Principaux liens de Navigations-->
+        <nav>
+            <div class="LignePresentation">
+              <ul>
+                  <!--<li class="menu-accueil"><a href="Accueil.html">Accueil</a></li>-->
+                  <li class="menu-bienvenue"><a>BIENVENUE</a></li>
+                  <li class="menu-Conexion"><a href="Conexion.html">Conexion</a></li>
+                  <li class="menu-Incription"><a href="Incription.html">Incription</a></li>
+                  <li class="menu-password"><a href="password.html">Mot de passe perdu ?</a></li>
+                  <!--<li class="menu-Forum"><a href="Forum.html">Forum</a></li>-->
+                 <!-- <li class="menu-contacter"><a href="Nous-contacter.html">Nous contacter</a></li>-->
+              </ul>
+            </div>
+        
+        </nav>
+        <div class="content">
+  <!--Le cote gauche-->
+  <div class="menu-gauche">
+          <div class="ex-menu-gauche">
+            <aside class="aside">
+                 <div class="titles">Le site </div>
+                 <div><a href="../Projet-web.html">ACCUEIL</a></div>
+                 <div><a href="faq.html">FAQ</a></div>
+                 <!-- <div><a href="contact.html">CONTACT</a></div> -->
+           </aside>
+           <aside class="aside1">
+                <div class="titles">M&eacute;dias</div>
+                <div><a onclick="autorise_download();" style="text-decoration: underline;color:blue">DOWNLOAD</a></div>
+                <!-- <div><a href="licence.html">LICENCIE</a></div> -->
+                <div><a href="logiciel.html">LOGICIELS</a></div>
+           </aside>
+           <aside class="aside2">
+                <div class="titles">&Eacute;changes</div>
+                <div><a onclick="autorise_chat();" style="text-decoration: underline;color:blue">CHAT</a></div>
+                <div><a href="partenariat.html">PARTENARIAT</a></div>
+           </aside>
+
+      </div>
+      
+  <div class="publicite">
+         <p> Nous r&eacute;joindre sur les r&eacute;so-sosiaux</p>
+          <ul>
+            <li><a href=""><img src="Ressources/instagramm.png" class="icone-insta"></a></li>
+            <li><a href="geniusclassroom-viber"><img src="Ressources/viber.png" class="icone-viber"></a></li>
+            <li><a href="geniusclassroom-fb@gmail.com"><img src="Ressources/face-book.png" class="icone-fb"></a></li>
+            <li><a href="geniusclassroom-viver-youtube@gmail.com"><img src="Ressources/youtube-logo-hd-8.png" class="icone-youtube"></a></li>
+<!--             <li><a href=""><img src="Ressources/whatsapp.png" class="icone-whatsapp"></a></li>
+ -->
+            
+          </ul>
+      </div>
+   </div> 
+        
+        <section class="centre-accueil central">
+            <p class="geniusP"><i><b class="geniusB">geniusclassroom<br> </b>
+                 inscription </i></p>
+            <h1 class="newmembre">Nouveau Membre</h1> 
+            <div class="description">
+           <p> Les administrateurs et mod&eacute;rateur de ce site ont pour mission quotidienne de supprimer <br>
+            ou &eacute;diter tous les m&eacute;ssage  à caract&egrave;re reprehensible. Toutefois il leur est<br>
+            impossible de passer en revue tous les messages.Vous admettez donc que tous les messages post&eacute;s<br>
+            sur ce site expriment la vue et l'opinion de leur  auteurs respectifs, et non pas des administraeurs, <br>
+            modéraeurs ou webmasters (except&eacute; les messages port&eacute;s par eux m&ecirc;me) et par <br>
+            cons&eacute;quent ne peuvent pas &ecirc;tre tenus pour responsable.<br><br>
+            Vous consentez &agrave; ne pas poser des messages injugieux, obsc&egrave;nes, vulgu&egrave;res,diffamatoire,<br>
+            mena&ccedil;ants, sexuels ou tout autre message allant dans le sens de la d&eacute;pravation. Le faire peut <br>
+            conduire &agrave; &ecirc;tre bannir imm&eacute;diatement de fa&ccedil;on permanante. Vous &ecirc;tes d'accord<br>
+            sur le fait que l'administrateur, le webmaser et le mod&eacute;rateur de ce site ont le droit de <br>
+            v&eacute;rouiller, supprimer, &eacute;diter n'importe quel sujet de discussion &agrave; tout moment . En tant<br>
+            qu'utilisateur vous &ecirc;tes d'accord sur le fait que toutes les informations que vous fournirez<br>
+            ci-apre&egrave;s seront stock&eacute;s dans une base d donn&eacute;es. Cependant ces informaions ne seront <br>
+            divulgu&eacute;es &agrave; aucune tierce personne ou soci&eacute;t&eacute; sans votre accord. Le webmaster,<br>
+            le mod&eacute;rateu et l'administrateur ne peuvent pas &ecirc;tre tenus pour responsable si une tentative de<br>
+            piratage informatique conduit conduit &agrave; l'acc&egrave;s de ces donn&eacute;es. Les mots de passes sont<br>
+            cript&eacute;s e en s&eacute;curit&eacute;.<br><br>
+            Ce site utilise les coockies pour stocker les informations sur votre ordinateur. Ces coockies ne contiendrons<br>
+            aucunes information que vous n'aurez entr&eacute;e ci-apr&egrave;s, ils servent seulement &agrave; ameliorer<br>
+            le connfort d'utilisation. L'adresse e-mail est uniquement utiliis&eacute;e afin de confirmer les d&eacute;tails<br>
+            de votre enregistrement ainsi que de votre mot de passse (Et aussi nous vous enverons un autre mot de passe au <br>
+            cas o&ugrave; vous l'oublierez).<br>
+            Ces r&egrave;gles prennent effet sur l'int&eacute;gralit&eacute; du site &agrave; savoirnson conenu propre, son <br>
+            Forum et sa chat Box
+            <br><br>
+            En vous enregistrant vous vous portez garant de fait d'&ecirc;tre en accord avec le r&egrave;glement ci-dessus.
+            </p>
+            </div>
+            <div class="btnconexion">
+                <a href="formulaire-inscription.html">
+                    <button class="accepte">J'acceper</button>
+               </a>
+               <a href="Projet-web.html">
+                    <button class="refus">Je refuse</button>
+              </a>
+           </div>
+        </section>
+        
+  </div>
+        <footer> <p>COPYRIGHT 2020 <b>geniusclassroom</b> ALL RIGHT RESERVED</p></footer>
+        
+        
+        
+    
+    </body>
+
+
+
+
+
+
+
+
+</html>
